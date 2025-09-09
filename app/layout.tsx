@@ -85,6 +85,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+<script id="google-analytics">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S69M9RGY23');
+  `}
+</script>
+      </head>
       <body
         className={`${geistMono.className} antialiased relative bg-background dark:bg-[#151515]`}
       >
@@ -116,6 +126,7 @@ export default function RootLayout({
           </PackageNameProvider>
         </ThemeProvider>
       </body>
+
     </html>
   );
 }
